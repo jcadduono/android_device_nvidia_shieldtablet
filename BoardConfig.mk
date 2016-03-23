@@ -53,3 +53,6 @@ TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 162
 TW_INCLUDE_CRYPTO := true
 TW_MTP_DEVICE := "/dev/mtp_usb"
+
+# Touchscreen support
+TARGET_RECOVERY_DEVICE_MODULES := rm-wrapper
