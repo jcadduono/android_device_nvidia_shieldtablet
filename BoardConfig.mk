@@ -33,7 +33,7 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 
 TARGET_PREBUILT_KERNEL := device/nvidia/shieldtablet/zImage
 
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/tegra-ehci.0/usb/gadget/lun%d/file"
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/tegra-udc.0/gadget/lun%d/file"
 
 # Use this flag if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true

@@ -19,9 +19,9 @@ on fs
     write /sys/class/android_usb/android0/bDeviceProtocol 0
 
     # set up the usb mass storage lun
-    write /sys/devices/tegra-ehci.0/usb/gadget/lun0/cdrom 0
-    write /sys/devices/tegra-ehci.0/usb/gadget/lun0/nofua 0
-    write /sys/devices/tegra-ehci.0/usb/gadget/lun0/ro 0
+    write /sys/devices/platform/tegra-udc.0/gadget/lun0/cdrom 0
+    write /sys/devices/platform/tegra-udc.0/gadget/lun0/nofua 0
+    write /sys/devices/platform/tegra-udc.0/gadget/lun0/ro 0
 
     setprop sys.usb.config ${persist.sys.usb.config}
 
